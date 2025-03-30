@@ -386,6 +386,8 @@ GEM
       unicode-emoji (~> 4.0, >= 4.0.4)
     unicode-emoji (4.0.4)
     useragent (0.16.11)
+    vips (8.15.1)
+      ffi (~> 1.12)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
@@ -425,6 +427,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
+  mini_magick
   puma (>= 5.0)
   pundit
   rails (~> 7.2.0)
@@ -436,6 +439,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
+  vips
   web-console
 
 BUNDLED WITH

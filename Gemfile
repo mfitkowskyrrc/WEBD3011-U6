@@ -65,3 +65,4 @@ group :test do
 end
 
 gem "sassc-rails", "~> 2.1"
+gem "mini_magick"

@@ -1,11 +1,19 @@
-<div class="customer">
-  <h3><%= customer.name %></h3>
-  <p>Email: <%= customer.email %></p>
-  <p>Phone: <%= customer.phone %></p>
+<div class="card w-50">
+  <div class="row align-items-start">
+    <div class="col">
+      <h3><%= customer.full_name %></h3>
+      <p>Email: <%= customer.email %></p>
+      <p>Phone: <%= customer.phone %></p>
+    </div>
+    <div class="col">
+      <% if customer.image.attached? %>
+        <%= image_tag customer.image, size: '200x100' %>
+      <% else %>
+        <p>No Image Available</p>
+      <% end %>
+    </div>
+  </div>
 
-  <% if customer.image.attached? %>
-    <%= image_tag customer.image %>
-  <% else %>
-    <p>No Image Available</p>
-  <% end %>
+
+
 </div>

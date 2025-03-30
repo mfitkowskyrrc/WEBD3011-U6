@@ -1,0 +1,4 @@
+<h1>Customers With Missing Emails</h1>
+<% @customers.each do |customer| %>
+  <%= render "customers/customer", customer: customer %>
+<% end %>
